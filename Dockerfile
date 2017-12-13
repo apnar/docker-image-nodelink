@@ -1,7 +1,7 @@
 FROM mono:latest
 MAINTAINER Josh Lukens <jlukens@botch.com>
-RUN apt-get update &&
-apt-get -y install wget &&
+RUN apt-get update && \
+apt-get -y install wget && \
 mkdir /NodeLink
 
 EXPOSE 8090
