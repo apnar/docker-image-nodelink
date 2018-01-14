@@ -1,7 +1,6 @@
 #!/bin/bash
 if [ ! -e "/NodeLink/NodeLink.exe" ]; then
-cd /NodeLink
-wget http://automationsha...es/NodeLink.exe
+  cd /NodeLink
+  wget http://automationshack.com/Files/NodeLink.exe
 fi
-mono /NodeLink/NodeLink.exe &
-/bin/bash
+exec mono /NodeLink/NodeLink.exe

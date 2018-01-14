@@ -5,6 +5,6 @@ apt-get -y install wget && \
 mkdir /NodeLink
 
 EXPOSE 8090
-COPY startup.sh /usr/local/myscripts/mystart.sh
+COPY startup.sh /
 VOLUME /NodeLink
-ENTRYPOINT ["/usr/local/myscripts/mystart.sh"]
+ENTRYPOINT ["/startup.sh"]
